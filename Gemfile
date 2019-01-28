@@ -68,3 +68,6 @@ gem 'bootstrap-sass'
 gem "jquery-rails"
 gem 'bcrypt'
 gem 'carrierwave'
+gem 'mini_magick'
+gem 'counter_culture'
+gem 'activerecord-reputation-system'

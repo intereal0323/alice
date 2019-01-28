@@ -6,5 +6,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    # def liked?(topic)
+    #   evaluations.where(target_type:topic.class, reputation_name: :like, target_id:topic.id).present?
+    # end
   end
 end

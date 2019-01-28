@@ -13,10 +13,12 @@
             <%= f.label :description %>
             <%= f.text_area :description, class: 'form-control' %>
           </div>
-
+　　  <% if logged_in? %>
           <%= f.submit '投稿', class: 'btn btn-black btn-block' %>
-
-        <% end %>
+          <% else %>
+          <h2><% link_to "HOME", root_path %></h2>
+         <% end %>
+         <% end %>
       </div>
     </div>
   </div>

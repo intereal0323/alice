@@ -7,7 +7,6 @@ h3{
 .text-white {
   color: #fff;
 }
-
 .btn-white {
   color: #fff;
   border: 1px solid #fff;
@@ -16,6 +15,7 @@ h3{
   font-size: 20px;
   background-color: rgba(0,0,0,0.0);
 
+
   &:hover {
     color: #fff;
   }
@@ -23,7 +23,7 @@ h3{
 
 .top-hero-wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background: image-url('bg-top.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ h3{
     height: 40px;
   }
 }
-.btn-black {
+.btn-black{
   color: #565656;
   border: 1px solid #565656;
   padding-top: 15px;
@@ -96,7 +96,7 @@ h3{
   background-color: rgba(0,0,0,0.0);
 
   &:hover {
-    color: #565656;
+    color: #fff;
   }
 }
 
