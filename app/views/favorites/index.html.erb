@@ -9,10 +9,13 @@
             </h2>
             <%= image_tag topic.image.url %>
             <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon'%>
+
             <%=link_to(image_tag 'icons/comment.png', class: 'topic-index-icon') %>
             <dl class="topic-text">
              <dt><%= topic.description %></dt><br>
-             <dt><%= link_to "コメント", favorites_show_path %></dt>
+             <dt><%= link_to "コメント", favorites_path %></dt>
+             <% if(count=topic.favorites.count)>0 %>
+             <li>⭐️<%=count%></li>
             </dl>
           </div>
         </div>

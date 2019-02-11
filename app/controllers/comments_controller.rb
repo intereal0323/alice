@@ -1,17 +1,17 @@
 class CommentsController < ApplicationController
-  def index
-    @comment_topics = current_user.comment_topics
-  end
+  def new
+    @comment=Comment.new
+end
 
-  def create
-    comment = Comment.new
-    comment.user_id = current_user.id
-    comment.topic_id = params[:topic_id]
+def create
+  @comment = Comment.new(body: params[:comment][:body])
+  @comment.user_id = current_user.id
+  @comment.topic_id=params[:comment][:topic_id]
 
-    if comment.save
-      redirect_to reload,
-    else
-      redirect_to root_path,
-    end
+  if @comment.save
+    redirect_to topics_path
+  else
+    render :new
   end
+end
 end

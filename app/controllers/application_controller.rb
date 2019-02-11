@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
   def logged_in?
     !current_user.nil?
   end
-end
+  #
+  #   def likes
+  #     topic.count(favorite.id)
+  # end
+  end

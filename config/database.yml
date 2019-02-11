@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: alice_production
-  username: alice
-  password: <%= ENV['ALICE_DATABASE_PASSWORD'] %>
+adapter: postgresql
+encoding: unicode
+pool: 5

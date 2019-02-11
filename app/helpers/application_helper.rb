@@ -6,8 +6,12 @@ module ApplicationHelper
   def logged_in?
     !current_user.nil?
   end
-  
+
   def index
     @favorite_topics = current_user.favorite_topics
   end
+#
+#   def favorite.count
+#     topic.count(favorite.id)
+# end
 end
